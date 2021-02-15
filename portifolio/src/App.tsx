@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import Nav from './Components/Header/Nav';
 
-function App() {
+const Main = styled.main`
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1111;
+    @media screen and (max-width: 400px){
+      min-height: 115vh;
+    }
+`
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learning React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Nav />
+      {/* <Content /> */}
+    </Main >
   );
 }
 
