@@ -2,6 +2,7 @@ import React from 'react';
 import background from './Assets/2780110.jpg'
 import styled from 'styled-components'
 import Nav from './Components/Header/Nav';
+import Content from './Components/Content/Content';
 
 const Main = styled.main`
     margin: 0;
@@ -21,7 +22,7 @@ const App: React.FC = () => {
   return (
     <Main>
       <Nav />
-      {/* <Content /> */}
+      <Content />
     </Main >
   );
 }
