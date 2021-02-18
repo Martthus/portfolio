@@ -1,9 +1,9 @@
 import React from 'react'
 // import Aside from '../Aside/Aside';
-// import Section from "../Section/Section";
+import Section from "./Section/Section";
 import { Cloud, Main, Menu } from "./style";
 import cloud from '../../Assets/cloud2.png'
-import profile from '../../Assets/profile.jpg'
+import sonicRing from '../../Assets/ring-sonic.png'
 import ringSonic from '../../Assets/ring-sonic.mp3'
 import ReactAudioPlayer from 'react-audio-player';
 
@@ -17,7 +17,7 @@ export default function Content() {
     return (
         <Main >
             <Cloud src={cloud} alt="" />
-            <Menu src={profile} alt="" onClick={() => active()} actived={actived} />
+            <Menu src={sonicRing} alt="" onClick={() => active()} actived={actived} />
 
             {actived &&
                 <ReactAudioPlayer
@@ -26,7 +26,7 @@ export default function Content() {
                     volume={0.1}
                 />}
 
-            {/* <Section actived={actived} /> */}
+            <Section actived={actived} />
             
             {/* {actived ? <Aside /> : <></>} */}
         </Main>
