@@ -27,7 +27,7 @@ export const Cloud = styled.img`
     @media screen and (min-width: 350px) and (max-width: 425px){
         height: 6%;
         width: 700px;
-        top: 20%;
+        top: 22%;
         transform: rotate(-0.2deg);
         z-index: 1;
     }
@@ -39,9 +39,9 @@ export const Cloud = styled.img`
     }
     @media screen and (min-width: 720px) and (max-width: 1440px){
         height: 9%;
-        width: 1100px;
-        top: 19%;
-        transform: rotate(-0.5deg);
+        width: 1500px;
+        top: 21%;
+        transform: rotate(0deg);
         z-index: 1;
     }
 `
@@ -59,9 +59,8 @@ export const Menu = styled.img`
             :hover {
                 cursor: pointer;
             }
-        animation: ringSonic 5s infinite;
+        animation: ringSonic 5s linear infinite;
         @keyframes ringSonic{
-            10% { top: 9%}
             25% {top: 5%}
             50% {top: 9%}
             75% {top: 5%}
@@ -75,7 +74,7 @@ export const Menu = styled.img`
         left: ${props => props.actived ? '38.56%' : '38.56%'};
         z-index: 1;
     }    
-    @media screen and (min-width: 321px) and (max-width: 375px){
+    @media screen and (min-width: 321px) and (max-width: 377px){
         width: 17vmin;
         height: 17vmin;
         top: ${props => props.actived ? '85%' : '85%'};
@@ -84,33 +83,39 @@ export const Menu = styled.img`
         position: fixed;
 
         @keyframes ringSonic{
-            10% { top: 85%}
-            25% {top: 80%}
+            25% {top: 81%}
             50% {top: 85%}
-            75% {top: 80%}
+            75% {top: 81%}
             100% {top: 85%}
         }
     }
     @media screen and (min-width: 378px) and (max-width: 425px){
-        width: 21vmin;
-        height: 22vmin;
-        top: ${props => props.actived ? '34.2%' : '34.2%'};
-        left: ${props => props.actived ? '38.8%' : '38.8%'};
+        width: 19vmin;
+        height: 19vmin;
+        top: ${props => props.actived ? '84%' : '84%'};
+        left: ${props => props.actived ? '78%' : '78%'};
         z-index: 1;
+        position: fixed;
+
+        @keyframes ringSonic{
+            25% {top: 81%}
+            50% {top: 84%}
+            75% {top: 81%}
+            100% {top: 84%}
+        }
     }
     @media screen and (min-width: 720px) and (max-width: 1440px){
         width: 11vmin;
         height: 11vmin;
-        top: ${props => props.actived ? '3%' : '3%'};
+        top: ${props => props.actived ? '5%' : '5%'};
         left: ${props => props.actived ? '0%' : '0%'};
         z-index: 1;
 
         @keyframes ringSonic{
-            10% { top: 3%}
             25% {top: 2%}
-            50% {top: 3%}
+            50% {top: 5%}
             75% {top: 2%}
-            100% {top: 3%}
+            100% {top: 5%}
         }
     }
 `

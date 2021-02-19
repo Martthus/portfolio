@@ -42,9 +42,16 @@ export const Profile = styled.div`
         width: 100vw;
         height: 100px;
     }
-    @media screen and (min-width: 720px) and (max-width: 1440px){
+    @media screen and (min-width: 720px) and (max-width: 1100px){
         grid-row: auto;
         width: 98.5vw;
+        align-items: flex-end;
+    }
+    @media screen and (min-width: 1100px) and (max-width: 1440px){
+        grid-row: auto;
+        width: 98.5vw;
+        height: 250px;
+        align-items: flex-end;
     }
 `
 
