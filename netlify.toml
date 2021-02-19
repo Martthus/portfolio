@@ -1,11 +1,17 @@
 [build]
-  command = "npm build"
-  functions = "lambda"
+base = "portfolio/"
+command = "npm build"
+functions = "lambda"
 
 # this is actually a Rewrite
 # totally optional, but makes up for
 # a much better UX
 [[redirects]]
-  from = "/"
-  to = "/.netlify/functions/index"
-  status = 200
+from = "/*"
+to = "/portfolio/:splat"
+status = 200
+
+# A redirect rule with many of the supported properties
+[[redirects]]
+from = "/old-path"
+to = "/new-path"
