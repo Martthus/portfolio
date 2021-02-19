@@ -34,7 +34,7 @@ export const Header = styled.header`
         }
     }
     @media screen and (min-width: 720px) and (max-width:1440px){
-        height: 20vh;
+        height: 25.5vh;
         h1 {
             font-size: 40px;
             margin: 0px;
