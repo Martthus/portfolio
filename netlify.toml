@@ -4,8 +4,6 @@
 [build]
 command = "npm run-script build"
 commandOrigin = "config"
-[environment]
-REVIEW_ID = "9"
 publish = "/opt/build/repo/dist"
 #functions = "/opt/build/repo/lambda"
 
