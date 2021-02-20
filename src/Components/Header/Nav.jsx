@@ -8,7 +8,7 @@ export default function Nav() {
     return (
         <Header>
             <h1>Matheus Martins Candido</h1>
-            <h3>Front-end Developer</h3>
+            <h3>FullStack Developer</h3>
             <Comet src={comet} alt="" />
             <Asteroid1 src={asteroid1} alt="" />
             <Asteroid2 src={asteroid2} alt="" />
