@@ -1,9 +1,5 @@
-[build]
-command =  "npm run-script build"
-commandOrigin = "config"
-[environment]
-  REVIEW_ID = 9
-functions = "/opt/build/repo/opt/build/repo/lambda"
+
+#functions = "/opt/build/repo/opt/build/repo/lambda"
 
 #[build]
 #command = "npm run-script build"
