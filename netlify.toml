@@ -1,17 +1,17 @@
 
 #functions = "/opt/build/repo/opt/build/repo/lambda"
 
-[build]
-command = "npm run-script build"
-functions = "/opt/build"
-publish = "/opt/build"
+#[build]
+#command = "npm run-script build"
+#functions = "/opt/build"
+#publish = "/opt/build"
 
 # this is actually a Rewrite
 # totally optional, but makes up for
 # a much better UX
 
-[[redirects]]
-from = "/*"
-status = 200
-to = "/portfolio/:splat"
+#[[redirects]]
+#from = "/*"
+#status = 200
+#to = "/portfolio/:splat"
 
