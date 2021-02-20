@@ -13,7 +13,8 @@ publish = "/opt/build/repo/dist"
 # totally optional, but makes up for
 # a much better UX
 
-#[[redirects]]
-#from = "/*"
-#to = "/portfolio/:splat"
-#status = 200
+[[redirects]]
+from = "/*"
+status = 200
+to = "/portfolio/:splat"
+
