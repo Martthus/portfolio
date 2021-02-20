@@ -1,9 +1,12 @@
 
 #functions = "/opt/build/repo/opt/build/repo/lambda"
 
-#[build]
-#command = "npm run-script build"
-#commandOrigin = "config"
+[build]
+command = "npm run-script build"
+commandOrigin = "ui"
+[environment]
+REVIEW_ID = {}
+functions = "/opt/build/repo/opt/build/repo/lambda"
 #functions = "/opt/build/repo/lambda"
 
 # this is actually a Rewrite
