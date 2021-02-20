@@ -1,15 +1,21 @@
 [build]
-command = "npm run-script build"
+command =  "npm run-script build"
 commandOrigin = "config"
-functions = "/opt/build/repo/lambda"
+
+functions = "/opt/build/repo/opt/build/repo/lambda"
+
+#[build]
+#command = "npm run-script build"
+#commandOrigin = "config"
+#functions = "/opt/build/repo/lambda"
 
 # this is actually a Rewrite
 # totally optional, but makes up for
 # a much better UX
-[[redirects]]
-from = "/*"
-to = "/portfolio/:splat"
-status = 200
+#[[redirects]]
+#from = "/*"
+#to = "/portfolio/:splat"
+#status = 200
 
 # A redirect rule with many of the supported properties
 #[[redirects]]
