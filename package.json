@@ -1,10 +1,10 @@
 {
-  "name": "portifolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "build": "netlify-lambda build src || react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ts-check": "tsc --noEmit --lib ES2015 ./src/*.ts"
