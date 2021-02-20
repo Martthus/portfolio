@@ -3,7 +3,7 @@
 
 [build]
 command = "npm run-script build"
-functions = "/opt/build/repo/lambda"
+functions = "/opt/build"
 publish = "/opt/build"
 
 # this is actually a Rewrite
