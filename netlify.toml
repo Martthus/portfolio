@@ -3,9 +3,8 @@
 
 [build]
 command = "npm run-script build"
-commandOrigin = "config"
-publish = "/opt/build/repo/lambda"
-functions = "/opt/build/repo/lambda"
+functions = "lambda"
+publish = "build"
 
 # this is actually a Rewrite
 # totally optional, but makes up for
