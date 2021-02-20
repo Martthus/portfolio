@@ -6,7 +6,7 @@ command = "npm run-script build"
 commandOrigin = "config"
 [environment]
 REVIEW_ID = {}
-functions = "/opt/build/repo/dist"
+publish = "/opt/build/repo/dist"
 #functions = "/opt/build/repo/lambda"
 
 # this is actually a Rewrite
