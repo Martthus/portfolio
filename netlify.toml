@@ -3,10 +3,10 @@
 
 [build]
 command = "npm run-script build"
-commandOrigin = "ui"
+commandOrigin = "config"
 [environment]
 REVIEW_ID = {}
-functions = "/opt/build/repo/opt/build/repo/lambda"
+functions = "/opt/build/repo/dist"
 #functions = "/opt/build/repo/lambda"
 
 # this is actually a Rewrite
