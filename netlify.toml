@@ -1,8 +1,6 @@
 [build]
 command = "npm run-script build"
-commandOrigin = config
-environment =
-  - REVIEW_ID
+commandOrigin = "config"
 functions = "/opt/build/repo/lambda"
 
 # this is actually a Rewrite
